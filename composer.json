@@ -1,0 +1,33 @@
+{
+    "name": "bagisto/bagisto-canada-post-shipping",
+    "description": "Provides Canada Post Shipping methods for shipping the product.",
+    "keywords": [
+        "bagisto",
+        "canada post",
+        "canada post shipping"
+    ],
+    "homepage": "https://github.com/bagisto/bagisto-canada-post-shipping",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "bagisto"
+            
+        }
+    ],
+    "require": {
+        "konekt/concord": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Webkul\\CanadaPost\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Webkul\\CanadaPost\\Providers\\CanadaPostServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev"
+}
